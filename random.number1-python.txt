@@ -1,0 +1,8 @@
+from random import randint
+sayilar = []  # Liste kullanmak için bunu seçin.
+while len(sayilar) < 10:  # 1 ile 80 arasý sayi uretiyoruz
+    sayi = randint(1,80) # 1 ile 80 arasý sayi uretiyoruz
+    if sayi not in sayilar:
+        sayilar.append(sayi)  # Listeye elemaný ekleyin.
+        # sayilar += sayi,  # Demete elemaný ekleyin.
+print(sayilar)
